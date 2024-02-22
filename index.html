@@ -7,31 +7,34 @@
     <title>Hungarian Poem Generator</title>
   </head>
   <body>
-    <header>
-      <h1>Hungarian Poem Generator</h1>
-    </header>
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Enter a topic for the poem"
-          autofocus
-          required
-        />
-        <input type="submit" />
-      </form>
-      <div>
-        Az én szivem sokat csatangolt, <br />
-        de most már okul és tanul. <br />
-        Aki halandó, csak halandót <br />
-        szerethet halhatatlanul.
-      </div>
-    </main>
-    <footer>
-      This AI project was coded by
-      <a href="https://github.com/ildikob09">Ildiko Balogh</a> and is
-      open-sourced on GitHub and Netlify
-    </footer>
+    <div class="container">
+      <header>
+        <h1>Hungarian Poem Generator</h1>
+      </header>
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="Enter a topic for the poem"
+            autofocus
+            required
+            class="instructions"
+          />
+          <input type="submit" class="submit-button" />
+        </form>
+        <div class="poem">
+          Az én szivem sokat csatangolt, <br />
+          de most már okul és tanul. <br />
+          Aki halandó, csak halandót <br />
+          szerethet halhatatlanul.
+        </div>
+      </main>
+      <footer>
+        This AI project was coded by
+        <a href="https://github.com/ildikob09">Ildiko Balogh</a> and is
+        open-sourced on GitHub and Netlify
+      </footer>
+    </div>
 
     <script src="src/index.js"></script>
   </body>
