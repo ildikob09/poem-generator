@@ -20,12 +20,26 @@ header {
 }
 
 form {
+  display: flex;
+}
+
+.form-container {
+  background-color: white;
+  margin-bottom: 50px;
   box-shadow: 0px 20px 60px rgba(39, 33, 66, 0.5);
   padding: 30px;
-  background-color: white;
   border-radius: 10px;
-  display: flex;
-  margin-bottom: 50px;
+}
+
+.hint {
+  font-size: 12px;
+  line-height: 1.5;
+  margin-top: 5px;
+  opacity: 0.7;
+}
+
+.hidden {
+  display: none;
 }
 
 .instructions {
@@ -64,4 +78,19 @@ footer {
   text-align: center;
   font-size: 12px;
   margin-top: 20px;
+}
+
+.blink {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }
